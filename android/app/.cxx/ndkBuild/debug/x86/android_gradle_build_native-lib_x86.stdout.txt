@@ -1,0 +1,2 @@
+[x86] Compile++      : native-lib <= main.cpp
+[x86] SharedLibrary  : libnative-lib.so

@@ -12,11 +12,51 @@ dependencies:
 
   cupertino_icons: ^0.1.2
 
+  # 기본적 plug-in
+  http:
+  shared_preferences:
+
+  # widget plug-in
+  webview_flutter:
+  smooth_star_rating:
+  image_cropper: ^1.2.1
+  flutter_naver_map_test:
+    git:
+      url: https://github.com/LBSTECH/flutter_naver_map.git
+      ref: master
+
+  # utility
+  google_sign_in:
+  font_awesome_flutter:
+
+  # reverse geo coding
+  geocoder:
+
+  # firebase - 2020.03 안정화 버전 기준
+  firebase_core: ^0.4.4
+  firebase_auth: ^0.15.5+3
+  firebase_storage: ^3.1.5
+  firebase_ml_vision: ^0.9.3+8
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 
 flutter:
-
   uses-material-design: true
+  assets :
+    - assets/icon/
+    - assets/img/
+
+  fonts :
+    - family : Nanum
+      fonts :
+        - asset : assets/fonts/NanumSquareRoundL.ttf
+          weight: 200
+        - asset: assets/fonts/NanumSquareRoundR.ttf
+          weight: 300
+        - asset: assets/fonts/NanumSquareRoundB.ttf
+          weight: 600
+        - asset: assets/fonts/NanumSquareRoundEB.ttf
+          weight: 900

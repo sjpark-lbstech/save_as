@@ -3,8 +3,7 @@ package proj.net.lbstech.save_as;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 
-public class OpenCV implements MethodChannel.MethodCallHandler {
-
+public class OpenCVHandler implements MethodChannel.MethodCallHandler {
 
     @Override
     public void onMethodCall(MethodCall call, MethodChannel.Result result) {
@@ -21,7 +20,6 @@ public class OpenCV implements MethodChannel.MethodCallHandler {
             result.success(true);
         }
     }
-
 
     public native void getCanny(String srcPath, String edgePath);
 }

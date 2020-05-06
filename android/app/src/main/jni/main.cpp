@@ -31,7 +31,7 @@ extern "C"{
             reverse(cel); }
     };
 
-    JNIEXPORT void JNICALL Java_proj_net_lbstech_save_1as_OpenCV_getCanny
+    JNIEXPORT void JNICALL Java_proj_net_lbstech_save_1as_OpenCVHandler_getCanny
         (JNIEnv *env, jobject, jstring jsrcPath, jstring jedgePath){
 
         const char *srcPath = env->GetStringUTFChars(jsrcPath, JNI_FALSE);

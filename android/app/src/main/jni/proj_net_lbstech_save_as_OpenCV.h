@@ -13,7 +13,7 @@ extern "C" {
      * Method:    getCanny
      * Signature: (Ljava/lang/String;Ljava/lang/String;)V
      */
-    JNIEXPORT void JNICALL Java_proj_net_lbstech_save_1as_OpenCV_getCanny
+    JNIEXPORT void JNICALL Java_proj_net_lbstech_save_1as_OpenCVHandler_getCanny
     (JNIEnv *, jobject, jstring, jstring);
 
 #ifdef __cplusplus
